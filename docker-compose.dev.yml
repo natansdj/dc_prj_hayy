@@ -4,18 +4,17 @@ services:
   # PHP application Docker container
   #######################################
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: dev_hayy
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: natansdj/php-apache-node
     container_name: d_prj_hayy
     external_links:
-#      - dev_mariadb:mariadb
       - dev_mysql:mysql
     networks:
       - default
-    # ports:
-    #   - "8000:80"
+    ports:
+      - "8000:80"
     #   - "8443:443"
     #   - "10022:22"
     volumes:
