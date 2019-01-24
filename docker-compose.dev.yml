@@ -7,7 +7,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: dev_workspace
+    image: dev_hayy
     container_name: d_prj_hayy
     external_links:
 #      - dev_mariadb:mariadb
