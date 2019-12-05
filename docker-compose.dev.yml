@@ -42,7 +42,7 @@ volumes:
   storage:
     driver: local
     driver_opts:
-      device: /home/ip310/Documents/dc_prj_hayy/backup
+      device: /home/a407/Documents/dc_prj_hayy/backup
       o: bind
 
 networks:
